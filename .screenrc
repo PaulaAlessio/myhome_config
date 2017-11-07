@@ -1,0 +1,29 @@
+# Default shell is bash 
+ defshell -bash 
+
+# detach on hangup
+ autodetach on
+
+# set scrollback to 2000 lines, default 100
+ defscrollback 2000
+
+# make a fancy statusline
+ caption always " " 
+ hardstatus alwayslastline
+ hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+#windowlist title        " Num%+3=| Fl%+3=| Name"
+#windowlist string       " %3n%+3=| %f%+3=| %t"
+
+# Default screens
+ bind c screen 1 # window numbering starts at 1 not 0
+ screen  -t shell1   1
+ screen  -t shell2   2
+ screen  -t shell3   3
+
+# Set keys
+escape ^Aa
+
+# Bind keys
+bindkey ^[[1;3D  prev  # alt + leftarrow
+bindkey ^[[1;3C  next  # alt + rightarrow
