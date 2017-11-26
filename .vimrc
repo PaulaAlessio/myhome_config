@@ -71,6 +71,8 @@ set encoding=utf8
 set nobackup 
 set nowritebackup
 
+" Strip all trailing white spaces
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " These are the basic settings to get the font to work (required):
 "set guifont="Fura Mono Regular for Powerline Plus Nerd File Types"
