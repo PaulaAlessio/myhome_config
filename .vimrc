@@ -1,4 +1,16 @@
 "+-----------------------------------------------------+
+"+.vimrc configuration file, working on VIM 8 compiled +
+"+ with flags:                                         +
+"+  ./configure                                        + 
+"+    --prefix=/usr/local/ --enable-python3interp=yes  +
+"+    --enable-rubyinterp=yes --enable-perlinterp=yes  +
+"+    --enable-multibyte --enable-cscope               +
+"+    --with-x --with-gnome                            +
+"+-----------------------------------------------------+
+
+
+
+"+-----------------------------------------------------+
 "|                    PLUG-INS                         |
 "+-----------------------------------------------------+
 
