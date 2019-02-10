@@ -20,16 +20,21 @@ can further customise them.
 
  Steps:
 
- 1. Copy .vimrc to your home directory
- 2. Edit the file and follow the instructions to:
-    - Let plugins to be installed:
+ 1. Copy .vimrc to your home directory 
+ 2. Copy the nerd fonts into `/usr/share/fonts/TTF/` or under `~/.local/fonts`
+    if you have no admin rights. 
+ 3. In order to let plugins to be installed you need to:
     ```
      $ mkdir -p ~/.vim/autoload;
      $ curl -fLo ~/.vim/autoload/plug.vim \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     ```
-    - Download molokai colorscheme from `https://github.com/tomasr/molokai.git`
-
+ 4. Download molokai colorscheme from `https://github.com/tomasr/molokai.git`
+    and copy it to  ``~/.vim/colors/``
+    
+ NOTE: you might have to change your terminal font to a nerd one, you might 
+       have to set `TERM` to `xterm-256color`, you might have to edit `.vimrc`
+       and edit the line `set guifont=...`. Fonts tend to be problematic. 
 
 ## Custom Spacevim configuration
 
@@ -42,3 +47,6 @@ can further customise them.
 
  You can custom  `init.toml`, following the documentation in:
  `https://github.com/SpaceVim/SpaceVim/tree/master/doc`
+
+ NOTE: when installing spacevim, a backup of your `~/.vimrc` and `~/.vim` 
+ are made: `~/vimrc_back` `~/.vim_back`
